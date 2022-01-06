@@ -1,9 +1,12 @@
 import React from "react";
-import { Navbar, Container } from "react-bootstrap";
+import { Navbar, Container, Button } from "react-bootstrap";
 import "./Header.css"
+// import useAuth from "../../../Hooks/useAuth";
+
 import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
+  // const { user, logOut } = useAuth();
   const style = {
     color: "white",
     textDecoration: "none",
@@ -82,9 +85,9 @@ const Header = () => {
                 </NavLink>
               ) : (
                 ""
-              )}
+              )} */}
 
-              {user?.email ? (
+              {/* {user?.email ? (
                 <Button onClick={logOut} variant="light">
                   Logout
                 </Button>

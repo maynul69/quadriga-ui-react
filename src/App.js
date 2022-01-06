@@ -6,6 +6,8 @@ import NotFound from './Pages/NotFound/NotFound';
 import Explore from './Pages/Explore/Explore';
 import About from './Pages/About/About';
 import QA from './Pages/QA/QA';
+import Login from './Pages/Login/Login';
+import AddCar from './Pages/AddCar/AddCar';
 
 
 function App() {
@@ -22,8 +24,14 @@ function App() {
           <Route path="/explore">
             <Explore></Explore>
           </Route>
+          <Route path="/login">
+            <Login></Login>
+          </Route>
           <Route path="/qa">
             <QA></QA>
+          </Route>
+          <Route path="/addCar">
+            <AddCar></AddCar>
           </Route>
 
           <Route path="/about">
