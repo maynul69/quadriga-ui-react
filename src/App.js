@@ -8,6 +8,7 @@ import About from './Pages/About/About';
 import QA from './Pages/QA/QA';
 import Login from './Pages/Login/Login';
 import AddCar from './Pages/AddCar/AddCar';
+import Subscribe from './Pages/Subscribe/Subscribe';
 
 
 function App() {
@@ -32,6 +33,9 @@ function App() {
           </Route>
           <Route path="/addCar">
             <AddCar></AddCar>
+          </Route>
+          <Route path="/subscribe">
+            <Subscribe></Subscribe>
           </Route>
 
           <Route path="/about">

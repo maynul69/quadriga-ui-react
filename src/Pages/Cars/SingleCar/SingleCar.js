@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Card } from 'react-bootstrap';
-
+import { Link } from "react-router-dom";
 const SingleCar = (props) => {
     const { title, cost, duration, img } = props.car;
 
@@ -11,7 +11,7 @@ const SingleCar = (props) => {
             variant="top"
             src={img}
             className="img-fluid"
-            style={{  margin: "auto", width: "370px", height: "247px" }}
+            style={{ margin: "auto", width: "370px", height: "247px" }}
           />
           <Card.Body>
             <Card.Title>{title}</Card.Title>
@@ -20,7 +20,9 @@ const SingleCar = (props) => {
               <br />
               Duration: {duration}
             </Card.Text>
-            <Button variant="dark">Subscribe</Button>
+            <Link to="/subscribe">
+              <button className="btn btn-dark my-5">Subscribe Now</button>
+            </Link>
           </Card.Body>
         </Card>
       </div>
